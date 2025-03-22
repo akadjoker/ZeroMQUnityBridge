@@ -1,0 +1,3 @@
+/home/djoker/code/cpp/ZeroMQUnityBridge/build/CMakeFiles/ZeroMQBridge.dir
+/home/djoker/code/cpp/ZeroMQUnityBridge/build/CMakeFiles/edit_cache.dir
+/home/djoker/code/cpp/ZeroMQUnityBridge/build/CMakeFiles/rebuild_cache.dir
