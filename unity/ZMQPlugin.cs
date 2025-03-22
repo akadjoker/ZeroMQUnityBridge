@@ -102,7 +102,7 @@ public class ZMQPlugin : MonoBehaviour
         }
     }
     
-    // Verifica por mensagens automaticamente se habilitado
+  
     void Update()
     {
         if (autoPolling)
@@ -114,7 +114,7 @@ public class ZMQPlugin : MonoBehaviour
         }
     }
     
-    // Limpeza ao destruir o objeto
+ 
     void OnDestroy()
     {
         foreach (var socket in _sockets)
@@ -127,7 +127,7 @@ public class ZMQPlugin : MonoBehaviour
         Debug.Log("ZeroMQ bridge shutdown");
     }
     
-    // Configura um socket publicador
+ 
     public bool SetupPublisher(string name, string endpoint)
     {
         if (_sockets.ContainsKey(name))
@@ -147,7 +147,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Configura um socket assinante
+ 
     public bool SetupSubscriber(string name, string endpoint, string topic)
     {
         if (_sockets.ContainsKey(name))
@@ -167,7 +167,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Configura um socket requisitante
+ 
     public bool SetupRequestSocket(string name, string endpoint)
     {
         if (_sockets.ContainsKey(name))
@@ -187,7 +187,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Configura um socket respondente
+ 
     public bool SetupReplySocket(string name, string endpoint)
     {
         if (_sockets.ContainsKey(name))
@@ -207,7 +207,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Configura um socket push
+ 
     public bool SetupPushSocket(string name, string endpoint)
     {
         if (_sockets.ContainsKey(name))
@@ -227,7 +227,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Configura um socket pull
+ 
     public bool SetupPullSocket(string name, string endpoint)
     {
         if (_sockets.ContainsKey(name))
@@ -247,7 +247,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Envia dados através de um socket
+ 
     public bool SendData(string socketName, byte[] data)
     {
         if (!_sockets.TryGetValue(socketName, out int socketId))
@@ -266,7 +266,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Envia uma string através de um socket
+ 
     public bool SendString(string socketName, string message)
     {
         if (!_sockets.TryGetValue(socketName, out int socketId))
@@ -285,7 +285,7 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Publica dados em um tópico
+ 
     public bool PublishData(string socketName, string topic, byte[] data)
     {
         if (!_sockets.TryGetValue(socketName, out int socketId))
@@ -304,14 +304,14 @@ public class ZMQPlugin : MonoBehaviour
         return true;
     }
     
-    // Publica uma string em um tópico
+ 
     public bool PublishString(string socketName, string topic, string message)
     {
         byte[] data = Encoding.UTF8.GetBytes(message);
         return PublishData(socketName, topic, data);
     }
     
-    // Recebe dados através de um socket
+ 
     public byte[] ReceiveData(string socketName)
     {
         if (!_sockets.TryGetValue(socketName, out int socketId))
@@ -339,7 +339,7 @@ public class ZMQPlugin : MonoBehaviour
         return data;
     }
     
-    // Recebe uma string através de um socket
+   
     public string ReceiveString(string socketName)
     {
         if (!_sockets.TryGetValue(socketName, out int socketId))
@@ -365,7 +365,7 @@ public class ZMQPlugin : MonoBehaviour
         return _stringBuffer.ToString();
     }
     
-    // Verifica se há mensagens disponíveis em um socket
+   
     public bool CheckMessage(string socketName)
     {
         if (!_sockets.TryGetValue(socketName, out int socketId))

@@ -231,7 +231,7 @@ class SimulatorClient:
         print("Disconnected from simulator")
 
 
-# Exemplo de uso
+ 
 if __name__ == "__main__":
     # Cria o cliente
     client = SimulatorClient()

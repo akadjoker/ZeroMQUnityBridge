@@ -42,8 +42,8 @@ The communication structure implemented by this library is as follows:
 
 ```bash
 # Clone the repository
-git clone https://github.com/akadjoker/zeromq-unity-bridge.git
-cd zeromq-unity-bridge
+git clone https://github.com/akadjoker/ZeroMQUnityBridge.git
+cd ZeroMQUnityBridge
 
 # Create build directory
 mkdir build && cd build
