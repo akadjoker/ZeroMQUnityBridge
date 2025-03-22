@@ -1,6 +1,0 @@
-# ninja log v5
-1	116	1742632449369070421	lib/libZeroMQUnityBridge.so	a52550e4a27ad1f3
-1	847	1742632480277973826	CMakeFiles/ZeroMQBridge.dir/src/Sockets.cpp.o	db8a0a5c56b079f5
-925	1021	1742632480433978388	lib/libZeroMQBridge.so	4e443de4719eab2d
-1	793	1742632480225972306	CMakeFiles/ZeroMQBridge.dir/src/Context.cpp.o	9ad576976c78bffa
-0	925	1742632480353976049	CMakeFiles/ZeroMQBridge.dir/src/ZMQBridge.cpp.o	c1ed8e6b99e314ec
